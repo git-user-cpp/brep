@@ -19,6 +19,16 @@
 #include "menu.h"
 #include "fun.h"
 
+/*
+ * Function: initial_choice
+ * ------------------------
+ * Prompts the user to input a choice for the data type they want to represent in binary.
+ * Reads the user input and validates it. If the input is not within the valid range
+ * (1 to 7), prompts the user again until a valid choice is entered.
+ *
+ * Returns:
+ *     int: The user's choice representing the selected data type.
+ */
 int initial_choice(void) {
     int choice;
     int scf_chk;
@@ -34,6 +44,17 @@ int initial_choice(void) {
     return choice;
 }
 
+/*
+ * Function: menu
+ * --------------
+ * Handles the menu logic based on the user's choice.
+ * Takes the user's choice as input and performs the corresponding action.
+ * Displays a prompt to enter a value of the selected data type and reads the value.
+ * Calls the appropriate print_binary function to print the binary representation of the value.
+ *
+ * Parameters:
+ *     choice (int): The user's choice representing the selected data type.
+ */
 void menu(int choice)
 {
     int scf_chk;
