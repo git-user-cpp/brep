@@ -17,7 +17,7 @@
  */
 
 #include "menu.h"
-#include "fun.h"
+#include "../functionality/fun.h"
 
 /*
  * Function: initial_choice

@@ -16,7 +16,7 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-#include "menu.h"
+#include "menu/menu.h"
 
 int main(void)
 {
