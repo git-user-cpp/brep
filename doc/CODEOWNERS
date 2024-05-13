@@ -1,0 +1,5 @@
+src/main.c @git-user-cpp
+src/menu.c @git-user-cpp @destatr
+src/menu.h @git-user-cpp
+src/fun.c @git-user-cpp
+src/fun.h @git-user-cpp
