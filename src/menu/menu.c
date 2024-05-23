@@ -60,10 +60,12 @@ int initial_choice(void)
  */
 void menu(int choice)
 {
+    enum {none, chars, shorts, ints, longs, lnlongs, floats, doubles};
+
     int scf_chk;
     switch (choice)
     {
-        case 1:
+        case chars:
         {
             int buf;
             char num;
@@ -74,7 +76,7 @@ void menu(int choice)
             print_binary(num, sizeof(num) * 8);
             break;\
         }
-        case 2:
+        case shorts:
         {
             short short_num;
             printf("Enter a short: ");
@@ -83,7 +85,7 @@ void menu(int choice)
             print_binary(short_num, sizeof(short_num) * 8);
             break;
         }
-        case 3:
+        case ints:
         {
             int int_num;
             printf("Enter an integer: ");
@@ -92,7 +94,7 @@ void menu(int choice)
             print_binary(int_num, sizeof(int_num) * 8);
             break;
         }
-        case 4:
+        case longs:
         {
             long long_num;
             printf("Enter a long: ");
@@ -101,7 +103,7 @@ void menu(int choice)
             print_binary(long_num, sizeof(long_num) * 8);
             break;
         }
-        case 5:
+        case lnlongs:
         {
             long long longl_num;
             printf("Enter a long long: ");
@@ -110,7 +112,7 @@ void menu(int choice)
             print_binary(longl_num, sizeof(longl_num) * 8);
             break;
         }
-        case 6:
+        case floats:
         {
             float float_num;
             printf("Enter a float: ");
@@ -119,7 +121,7 @@ void menu(int choice)
             print_binary(*((unsigned int*)&float_num), sizeof(float_num) * 8);
             break;
         }
-        case 7:
+        case doubles:
         {
             double double_num;
             printf("Enter a double: ");

@@ -22,7 +22,7 @@
     #include <stdio.h>
     #include <stdlib.h>
 
-    void print_binary(unsigned long long n, int i);
+    void print_binary(unsigned long long num, int num_size);
     void validate_scan(int args);
 
 #endif
