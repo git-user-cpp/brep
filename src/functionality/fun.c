@@ -18,12 +18,21 @@
 
 #include "fun.h"
 
-void print_binary(unsigned long long n, int i)
+/*
+ * Function: print_binary
+ * ------------------------
+ * Prints binary representation of a number
+ *
+ * Parameters:
+ *     num: number to represent binary
+ *     num_size: calculated size of number
+ */
+void print_binary(unsigned long long num, int num_size)
 {
-    int k;
-    for (k = i-1; k >= 0; k--)
+    int counter;
+    for (counter = num_size - 1; counter >= 0; counter--)
     {
-        if ((n >> k) & 1)
+        if ((num >> counter) & 1)
         {
             printf("1");
         } else
@@ -34,6 +43,14 @@ void print_binary(unsigned long long n, int i)
     printf("\n");
 }
 
+/*
+ * Function: initial_choice
+ * ------------------------
+ * Validates input. Checks if there's exactly one argument passed
+ *
+ * Parameters:
+ *     args: amount of arguments that were passed
+ */
 void validate_scan(int args)
 {
     if (args != 1)
