@@ -1,5 +1,10 @@
 # brep
 binary representator written in C
+
+---
+
+![brep_logo](img/small_logo.png)
+
 ---
 ![GitHub all releases](https://img.shields.io/github/downloads/git-user-cpp/brep/total?color=00FF00&label=Downloads&logo=GitHub&logoColor=00FF00&style=for-the-badge) ![GitHub Repo stars](https://img.shields.io/github/stars/git-user-cpp/brep?color=FFFF00&label=Stars&logo=GitHub&logoColor=FFFF00&style=for-the-badge) 
 
